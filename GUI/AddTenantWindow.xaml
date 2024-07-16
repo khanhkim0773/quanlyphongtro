@@ -1,0 +1,125 @@
+﻿<Window x:Class="GUI.AddTenantWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUI"
+        mc:Ignorable="d"
+        Title="AddTenantWindow"
+        Height="auto"
+        Width="700"
+        WindowStartupLocation="CenterScreen">
+    <Grid Background="#b0d4b8">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0"
+              Height="auto">
+            <materialDesign:Card Height="100" Padding="4"
+                                 Foreground="White" Background="#FF5D7B6F">
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center"
+                           FontSize="30" Text="Thêm người thuê" />
+            </materialDesign:Card>
+        </Grid>
+
+        <Grid Grid.Row="1"
+              Margin="40"
+              Background="#b0d4b8"
+              HorizontalAlignment="Center"
+              VerticalAlignment="Center">
+
+            <Border Background="White"
+                    CornerRadius="20"
+                    Padding="5">
+                <WrapPanel HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           Orientation="Vertical">
+
+                    <WrapPanel.Resources>
+                        <Style x:Key="TextBoxStyle"
+                               TargetType="TextBox"
+                               BasedOn="{StaticResource MaterialDesignFloatingHintTextBox}">
+                            <Setter Property="Width"
+                                    Value="500"></Setter>
+                            <Setter Property="Margin"
+                                    Value="14"></Setter>
+                            <Setter Property="FontSize"
+                                    Value="18"></Setter>
+                            <Setter Property="BorderBrush"
+                                    Value="Black"></Setter>
+                        </Style>
+
+                        <Style x:Key="ComboBoxStyle"
+                               TargetType="ComboBox"
+                               BasedOn="{StaticResource MaterialDesignFloatingHintComboBox}">
+                            <Setter Property="Width"
+                                    Value="500"></Setter>
+                            <Setter Property="Margin"
+                                    Value="14"></Setter>
+                            <Setter Property="FontSize"
+                                    Value="18"></Setter>
+                        </Style>
+                    </WrapPanel.Resources>
+
+                    <TextBox x:Name="txbName"
+                             VerticalAlignment="Center"
+                             materialDesign:HintAssist.Hint="Tên"
+                             Style="{StaticResource TextBoxStyle}" />
+
+                    <ComboBox x:Name="cmbGender"
+                              materialDesign:HintAssist.Hint="Giới tính"
+                              SelectionChanged="cmbGender_SelectionChanged"
+                              Style="{StaticResource ComboBoxStyle}">
+                        <ComboBoxItem Content="Nam"
+                                      Tag="Nam" />
+                        <ComboBoxItem Content="Nữ"
+                                      Tag="Nữ" />
+                    </ComboBox>
+
+
+                    <TextBox x:Name="txbCCCD"
+                             materialDesign:HintAssist.Hint="CCCD"
+                             materialDesign:TransitionAssist.DisableTransitions="True"
+                             MaxLength="12"
+                             Style="{StaticResource TextBoxStyle}" />
+
+                    <TextBox x:Name="txbNumberPhone"
+                             materialDesign:HintAssist.Hint="SDT"
+                             materialDesign:TransitionAssist.DisableTransitions="True"
+                             MaxLength="10"
+                             Style="{StaticResource TextBoxStyle}" />
+
+                    <DatePicker x:Name="dpBirthDay"
+                                materialDesign:HintAssist.Hint="Ngày sinh"
+                                materialDesign:TextFieldAssist.HasClearButton="True"
+                                Style="{StaticResource MaterialDesignFloatingHintDatePicker}"
+                                FontSize="18"
+                                Width="500" />
+                    <TextBox x:Name="txbEmail"
+                             VerticalAlignment="Center"
+                             materialDesign:HintAssist.Hint="Email"
+                             Style="{StaticResource TextBoxStyle}" />
+                </WrapPanel>
+            </Border>
+        </Grid>
+        <Grid Grid.Row="2">
+            <Button x:Name="btnAddTenant" Click="btnAddTenant_Click" Height="50"
+                    Width="100"  FontSize="16" Margin="12"
+                    materialDesign:ButtonAssist.CornerRadius="5"
+                    Background="#eae7d6" Foreground="Black">  
+                <TextBlock Text="Thêm" />
+            </Button>
+        </Grid>
+    </Grid>
+</Window>

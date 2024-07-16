@@ -1,0 +1,14 @@
+D:\HK2_2022-2023(NAM2)\DesktopApp\project\QLPT\DTO\bin\Debug\DTO.dll.config
+D:\HK2_2022-2023(NAM2)\DesktopApp\project\QLPT\DTO\bin\Debug\DTO.dll
+D:\HK2_2022-2023(NAM2)\DesktopApp\project\QLPT\DTO\bin\Debug\DTO.pdb
+D:\HK2_2022-2023(NAM2)\DesktopApp\project\QLPT\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\HK2_2022-2023(NAM2)\DesktopApp\project\QLPT\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\HK2_2022-2023(NAM2)\DesktopApp\project\QLPT\DTO\obj\Debug\DTO.dll
+D:\HK2_2022-2023(NAM2)\DesktopApp\project\QLPT\DTO\obj\Debug\DTO.pdb
+D:\HK2_2022-2023(NAM2)\DesktopApp\project1\QLPT\DTO\bin\Debug\DTO.dll.config
+D:\HK2_2022-2023(NAM2)\DesktopApp\project1\QLPT\DTO\bin\Debug\DTO.dll
+D:\HK2_2022-2023(NAM2)\DesktopApp\project1\QLPT\DTO\bin\Debug\DTO.pdb
+D:\HK2_2022-2023(NAM2)\DesktopApp\project1\QLPT\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\HK2_2022-2023(NAM2)\DesktopApp\project1\QLPT\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\HK2_2022-2023(NAM2)\DesktopApp\project1\QLPT\DTO\obj\Debug\DTO.dll
+D:\HK2_2022-2023(NAM2)\DesktopApp\project1\QLPT\DTO\obj\Debug\DTO.pdb
